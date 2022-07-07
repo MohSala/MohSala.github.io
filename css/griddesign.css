@@ -1,0 +1,70 @@
+.gridcontainer {
+    display: grid;
+}
+
+.header {
+    background-color: lightblue;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20pt;
+}
+
+.menuitem {
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuitem div {
+    text-align: center;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+.columns {
+    display: flex;
+}
+
+.columns div {
+    height: 300px;
+    padding: 10px;
+}
+
+.column1 {
+    flex: 25%;
+    background-color: #aaa;
+}
+
+.column2 {
+    flex: 50%;
+    background-color: #bbb;
+    flex-grow: 3;
+}
+
+.column3 {
+    flex: 25%;
+    background-color: #ccc;
+}
+
+
+.footer {
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    .columns {
+        flex-wrap: wrap;
+    }
+
+    .column2 {
+        order: 3;
+        flex: 100%;
+    }
+}
