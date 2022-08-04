@@ -1,0 +1,21 @@
+.container {
+  height: 800px;
+  width: 750px;
+  margin: auto;
+  position: relative;
+  background-color: cornsilk;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#options {
+  position: fixed;
+  bottom: 10%;
+  left: 5px;
+  z-index: 1;
+}
+
+#options div {
+  margin: 10px;
+}
