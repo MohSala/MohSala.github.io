@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/jquery-tmpl.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- <h1 id="square">ID OF A SQUARE</h1>
+    <ul>
+        <li>Shirt<button>Delete</button></li>
+        <li>Tie<button>Delete</button></li>
+        <li>Jacket<button>Delete</button></li>
+        <li>Hat<button>Delete</button></li>
+    </ul> -->
+    <div>
+        <div onclick="alert('div')">Outer div
+            <span onclick="alert('span1')">wrapper span
+                <span onclick="alert('span2')">click here
+
+                </span>
+            </span>
+        </div>
+    </div>
+</body>
+<script>
+
+    function DeleteItem() {
+        $(this).parent().remove()
+    }
+    $(function () {
+        $('button').click(DeleteItem)
+        $('ul li').first().prepend('<li>dog</li>')
+    })
+</script>
+
+</html>
